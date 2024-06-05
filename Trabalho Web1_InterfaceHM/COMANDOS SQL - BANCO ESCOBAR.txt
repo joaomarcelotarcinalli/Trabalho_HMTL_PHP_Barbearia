@@ -1,0 +1,11 @@
+CREATE DATABASE Barbearia;
+
+USE Barbearia;
+
+CREATE TABLE CADASTRO(
+	
+	id INT AUTO_INCREMENT PRIMARY KEY,
+	usuario VARCHAR(30),
+	senha VARCHAR(30),
+	plano varchar(30)
+);

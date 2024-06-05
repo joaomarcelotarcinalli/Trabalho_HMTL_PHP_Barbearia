@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Área Administrativa</title>
+</head>
+<body>
+<form method="post" action="cadastro_bd_admin.php">
+    <label>Usuário:
+        <input type="text" name="usuario">
+    </label>
+    <label>Senha:
+        <input type="password" name="senha">
+    </label>
+    <div class="form-floating">
+        <label>
+            <select name="plano" style="margin-top: 1%; margin-left: 9%; border: 2px solid black; border-radius: 8px; padding: 3px 3px">
+                <option selected>Selecione um plano</option>
+                <option value="Plano Base">Plano Base</option>
+                <option value="Plano Max">Plano Max</option>
+                <option value="Plano Plus">Plano Plus</option>
+            </select>
+        </label>
+    </div>
+    <input style="margin-top: 1%; margin-left: 11%; border-radius: 8px; border-radius: 8px; border: 2px solid black; padding: 5px 5px; background-color: black; color: white; font-family: Arial" type="submit" value="CADASTRAR">
+</form>
+</body>
+</html>

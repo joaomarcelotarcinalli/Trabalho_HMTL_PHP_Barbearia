@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Login!</title>
+</head>
+<header class="header">
+    <nav>
+            <a href="pag_sobre_barbearia.html">HOME</a>
+            <a href="https://web.whatsapp.com/">CONTATO</a>
+            <a href="https://www.google.com/maps/place/Av.+Min.+Laudo+Ferreira+de+Camargo,+305+-+Jardim+Peri+Peri,+S%C3%A3o+Paulo+-+SP,+05537-001/@-23.5871867,-46.7370914,17z/data=!3m1!4b1!4m6!3m5!1s0x94ce5688954562ff:0x5063903892bee447!8m2!3d-23.5871867!4d-46.7370914!16s%2Fg%2F11fx2wjwd9?entry=ttu">LOCALIZAÇÃO</a>
+            <a href="pag_sobre_barbearia.html">SOBRE NÓS</a>
+    </nav>
+</header>
+<style>
+    .header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background-color: black;
+        padding: 10px;
+    }
+
+    .header nav a {
+        text-decoration: none;
+        font-family: cursive;
+        color: white;
+        font-size: 18px;
+        margin: 0 10px;
+    }
+</style>
+<body>
+
+<form method="post" action="login_barbearia.php">
+    <p style="margin-left: 39%; font-size: 36px; font-family: cursive; margin-top: 13%; text-shadow: 2px 2px 4px #969393">Entre com sua conta</p>
+    <div style="box-shadow: 0 0 10px black; margin-top: 0; margin-left: 40%; height: 220px; width: 290px;border: 2px black; border-radius: 8px; background-color: black">
+        <label style="font-family: cursive; margin-left: 0">
+            <input style="text-align: center; margin-top: 12%; font-size: 16px; font-family: cursive; border: 2px white; border-radius: 8px; margin-left: 8%" type="text" placeholder="Usuário" name="usuario">
+        </label>
+
+        <br>
+        <br>
+
+        <label style="font-family: cursive; margin-left: 0">
+            <input style="text-align: center; margin-top: 13%; font-size: 16px; font-family: cursive; border: 2px white; border-radius: 8px; margin-left: 8%" type="password" placeholder="Senha" name="senha">
+        </label>
+
+        <input style="margin-left: 22%;font-family: cursive;border: black 2px; border-radius: 12px; padding: 3px 3px; font-size: 14px; margin-top: 14%; background-color: white" type="submit" value="ENTRAR">
+        <a href="pag_planos.html" style="margin-left: 11%; font-family: cursive;border: black 2px; border-radius: 12px;font-size: 14px; margin-top: 13%; text-decoration: none; color: black; background-color: white; padding: 3px">VOLTAR</a>
+    </div>
+</form>
+</body>
+</html>

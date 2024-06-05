@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Olá! Preencha os dados</title>
+    <style>
+        .header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: black;
+            padding: 13px 20px; /* Ajustado o padding para melhor espaçamento */
+            width: 100%;
+        }
+
+        .header nav {
+            flex: 1; /* Ocupa todo o espaço disponível */
+        }
+
+        .header nav a {
+            text-decoration: none;
+            font-family: cursive;
+            color: white;
+            font-size: 18px;
+            margin: 0 10px;
+        }
+
+        .header form {
+            margin-right: 20px; /* Ajustado o espaçamento à direita */
+        }
+
+        .header form button {
+            border: 3px solid white;
+            background-color: black;
+            color: white;
+            border-radius: 8px;
+            padding: 10px 20px; /* Ajustado o padding para melhor espaçamento */
+            font-family: cursive;
+        }
+
+        body {
+            background-color: black;
+        }
+    </style>
+</head>
+<header class="header">
+    <nav>
+        <a href="index.html">HOME</a>
+        <a href="https://web.whatsapp.com/">CONTATO</a>
+        <a href="pag_sobre_barbearia.html">SOBRE NÓS</a>
+    </nav>
+</header>
+<body style="height: 100vh; width: 100vh">
+<p style="color: white; margin-top: 29%; font-size: 40px; font-family: cursive; margin-left: 89%">ASSINATURA</p>
+<form method="post" action="cadastro_BD.php">
+    <div class="row g-2">
+        <div style="margin-left: 95%; margin-top: 5%">
+                <label style="color: white">Usuário:
+                    <input style="padding: 5px 5px; border-radius: 8px; border: 2px solid white" type="text" class="form-control" placeholder="Usuário" name="usuario">
+                </label>
+                <label style="color: white">Senha:
+                    <input style="padding: 5px 5px; border-radius: 8px; border: 2px solid white" type="password" class="form-control" placeholder="Senha" name="senha">
+                </label>
+        <div class="form-floating">
+        </div>
+    </div>
+    <br>
+    <div class="col-md" style="margin-left: 97%">
+        <div class="form-floating">
+            <select name="plano" style="border: 2px solid white; padding: 4px 4px; border-radius: 8px" class="form-select" aria-label="Floating label select example">
+                <option selected>Selecione um plano</option>
+                <option value="Plano Base">Plano Base</option>
+                <option value="Plano Max">Plano Max</option>
+                <option value="Plano Plus">Plano Plus</option>
+            </select>
+        </div>
+    </div>
+    <br>
+    <br>
+    <div class="form-floating">
+        <input style="margin-left: 100%; margin-top: -10%; border-radius: 8px; border: 2px solid white; padding: 6px 6px; font-family: 'Arial'" type="submit" value="CADASTRAR">
+    </div>
+    </div>
+</form>
+</body>
+</html>
